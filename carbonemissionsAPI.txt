@@ -1,0 +1,39 @@
+// API to get carbon emisson by vehicle and total distance.
+
+GET
+/vehicles/{id}/carbonEmisson/{distance}
+Parameters:
+name: id
+type: number
+description: Vehicle Id
+name: distance
+type: number
+description: Distance in meters
+Response Payload:
+{
+"carbonMonoxide": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+},
+"nitrogenOxide": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+},
+"volatileOrganicCompound": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+},
+"fineParticulateMatter": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+},
+"suphurOxides": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+},
+"ammonia": {
+"emissonInKilotonnes": 0,
+"percentageOfNationalEmmissions": 0
+}
+}
+
